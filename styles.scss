@@ -3,7 +3,6 @@ $marginhor: 10%;
 $paragraphsize: 16px;
 $padding: 5%;
 $paddingvert: 20px;
-$backgroundcolor: #77d8d8;
 
 
 %center {
@@ -35,9 +34,6 @@ div {
     padding-bottom: $paddingvert;
     border: 2px dotted ;
     border-radius: 15px 50px 30px;
-    p {
-      font-size: $paragraphsize;
-    }
   }
 }
 @media (min-width: 1500px) {
@@ -49,6 +45,10 @@ div {
   .home::before {
     content: "Welcome to Austin Tran's Project 0!";
   }
+}
+
+p {
+  font-size: $paragraphsize;
 }
 .or {
   @extend %center;

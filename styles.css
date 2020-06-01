@@ -22,8 +22,6 @@ div .intro {
   padding-bottom: 20px;
   border: 2px dotted;
   border-radius: 15px 50px 30px; }
-  div .intro p {
-    font-size: 16px; }
 
 @media (min-width: 1500px) {
   .home::before {
@@ -31,6 +29,9 @@ div .intro {
 @media (max-width: 1499px) {
   .home::before {
     content: "Welcome to Austin Tran's Project 0!"; } }
+p {
+  font-size: 16px; }
+
 .or {
   font-weight: bolder;
   font-size: 20px; }
