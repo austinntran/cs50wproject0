@@ -1,6 +1,9 @@
 h1, h2, .or {
   text-align: center; }
 
+#heading {
+  margin-top: 70px; }
+
 body {
   background: #0779e4;
   background: linear-gradient(0deg, #0779e4 0%, #77d8d8 100%);
@@ -9,39 +12,55 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-#heading {
-  margin-top: 70px; }
-
 h1, h2 {
   margin-top: 20px; }
 
 h2 {
   margin-bottom: 50px; }
 
-div .intro {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: 2px dotted;
+div .box {
+  margin: 70px 10%;
+  padding: 20px 5%;
+  border: 5px dotted white;
   border-radius: 15px 50px 30px;
   background: #e49e07;
-  background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%); }
-  div .intro dt {
+  background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  div .box dt {
     font-size: 20px; }
-    div .intro dt a {
+    div .box dt a {
       color: white; }
 
 @media (min-width: 1500px) {
-  .home::before {
+  #home::before {
     content: "Welcome to Austin Tran's CS50 Web Programming with Python and JavaScript Project 0!"; } }
 @media (max-width: 1499px) {
-  .home::before {
+  #home::before {
     content: "Welcome to Austin Tran's Project 0!"; } }
+@media (min-width: 992px) {
+  .information-bordera {
+    border-left: 5px dotted white;
+    border-bottom: 5px dotted white;
+    border-top-right-radius: 43px;
+    border-bottom-left-radius: 50px;
+    background: #e49e07;
+    background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+
+  .information-borderb {
+    border-right: 5px dotted white;
+    border-top: 5px dotted white;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 43px;
+    background: #e49e07;
+    background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; } }
+#about::before {
+  content: "Who is Austin Tran?"; }
+
 p {
   font-size: 16px; }
 
@@ -51,5 +70,25 @@ p {
 
 #click {
   height: 100px; }
+
+.first {
+  position: relative;
+  top: 50%; }
+
+.information-bar {
+  margin: 70px 10%;
+  border: 5px solid white;
+  border-radius: 50px; }
+
+.information-box {
+  padding: 20px 5%; }
+
+#austin {
+  border: 5px solid white;
+  border-radius: 100px; }
+
+#bhs {
+  border: 5px solid white;
+  border-radius: 175px; }
 
 /*# sourceMappingURL=styles.css.map */
