@@ -1,0 +1,57 @@
+$margintop: 70px;
+$marginhor: 10%;
+$paragraphsize: 16px;
+$padding: 5%;
+$paddingvert: 20px;
+$backgroundcolor: #77d8d8;
+
+
+%center {
+  text-align: center;
+}
+body {
+  background: rgb(7,121,228);
+  background: linear-gradient(0deg, rgba(7,121,228,1) 0%, rgba(119,216,216,1) 100%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#heading {
+  margin-top: $margintop;
+}
+
+h1, h2 {
+  @extend %center;
+}
+div {
+  .intro {
+    margin-left: $marginhor;
+    margin-right: $marginhor;
+    margin-top: $margintop;
+    padding-left: $padding;
+    padding-right: $padding;
+    padding-top: $paddingvert;
+    padding-bottom: $paddingvert;
+    border: 2px dotted ;
+    border-radius: 15px 50px 30px;
+    p {
+      font-size: $paragraphsize;
+    }
+  }
+}
+@media (min-width: 1500px) {
+  .home::before {
+    content:"Welcome to Austin Tran's CS50 Web Programming with Python and JavaScript Project 0!";
+  }
+}
+@media (max-width: 1499px) {
+  .home::before {
+    content: "Welcome to Austin Tran's Project 0!";
+  }
+}
+.or {
+  @extend %center;
+  font-weight: bolder;
+  font-size: 20px;
+}
