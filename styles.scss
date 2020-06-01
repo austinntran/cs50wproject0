@@ -22,18 +22,31 @@ body {
 
 h1, h2 {
   @extend %center;
+  margin-top: 20px;
+}
+h2 {
+  margin-bottom: 50px;
 }
 div {
   .intro {
     margin-left: $marginhor;
     margin-right: $marginhor;
     margin-top: $margintop;
+    margin-bottom: $margintop;
     padding-left: $padding;
     padding-right: $padding;
     padding-top: $paddingvert;
     padding-bottom: $paddingvert;
     border: 2px dotted ;
     border-radius: 15px 50px 30px;
+    background: rgb(228,158,7);
+    background: linear-gradient(0deg, rgba(228,158,7,1) 0%, rgba(255,226,0,1) 100%);
+    dt {
+      font-size: 20px;
+      a {
+        color: white;
+      }
+    }
   }
 }
 @media (min-width: 1500px) {
@@ -54,4 +67,7 @@ p {
   @extend %center;
   font-weight: bolder;
   font-size: 20px;
+}
+#click {
+  height:100px;
 }

@@ -12,16 +12,29 @@ body {
 #heading {
   margin-top: 70px; }
 
+h1, h2 {
+  margin-top: 20px; }
+
+h2 {
+  margin-bottom: 50px; }
+
 div .intro {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 70px;
+  margin-bottom: 70px;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 20px;
   padding-bottom: 20px;
   border: 2px dotted;
-  border-radius: 15px 50px 30px; }
+  border-radius: 15px 50px 30px;
+  background: #e49e07;
+  background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%); }
+  div .intro dt {
+    font-size: 20px; }
+    div .intro dt a {
+      color: white; }
 
 @media (min-width: 1500px) {
   .home::before {
@@ -35,5 +48,8 @@ p {
 .or {
   font-weight: bolder;
   font-size: 20px; }
+
+#click {
+  height: 100px; }
 
 /*# sourceMappingURL=styles.css.map */
