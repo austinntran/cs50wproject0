@@ -1,13 +1,18 @@
-h1, h2, .or {
+.or {
   text-align: center; }
 
 #heading {
   margin-top: 70px; }
 
+* {
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%; }
+
 body {
   background: #0779e4;
   background: linear-gradient(0deg, #0779e4 0%, #77d8d8 100%);
-  height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -26,11 +31,12 @@ div .box {
   background: #e49e07;
   background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  height: 100%; }
   div .box dt {
     font-size: 20px; }
-    div .box dt a {
-      color: white; }
+div a {
+  color: white; }
 
 @media (min-width: 1500px) {
   #home::before {
@@ -58,11 +64,30 @@ div .box {
     background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
     background-repeat: no-repeat;
     background-attachment: fixed; } }
+@media (max-width: 991px) {
+  .information-border-sm-a {
+    background: #e49e07;
+    background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-top: 2.5px dotted white;
+    border-bottom: 5px solid white; }
+
+  .information-border-sm-b {
+    background: #e49e07;
+    background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-top: 2.5px solid white;
+    border-bottom: 5px dotted white; } }
 #about::before {
   content: "Who is Austin Tran?"; }
 
 p {
   font-size: 16px; }
+
+.center {
+  text-align: center; }
 
 .or {
   font-weight: bolder;
@@ -78,7 +103,11 @@ p {
 .information-bar {
   margin: 70px 10%;
   border: 5px solid white;
-  border-radius: 50px; }
+  border-radius: 50px;
+  background-image: url("img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .information-box {
   padding: 20px 5%; }
@@ -86,6 +115,10 @@ p {
 #austin {
   border: 5px solid white;
   border-radius: 100px; }
+
+#austinis, p.edu {
+  font-size: 16px;
+  line-height: 3; }
 
 #bhs {
   border: 5px solid white;

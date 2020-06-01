@@ -13,10 +13,16 @@ $redgradient: linear-gradient(0deg, rgba(228,158,7,1) 0%, rgba(255,226,0,1) 100%
 %firstelement {
   margin-top: $margintop;
 }
+
+* {
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+}
 body {
   background: rgb(7,121,228);
   background: linear-gradient(0deg, rgba(7,121,228,1) 0%, rgba(119,216,216,1) 100%);
-  height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,7 +33,6 @@ body {
 }
 
 h1, h2 {
-  @extend %center;
   margin-top: 20px;
 }
 h2 {
@@ -43,12 +48,13 @@ div {
     background: $redgradient;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100%;
     dt {
       font-size: 20px;
-      a {
-        color: white;
-      }
     }
+  }
+  a {
+    color: white;
   }
 }
 @media (min-width: 1500px) {
@@ -83,7 +89,23 @@ div {
     background-attachment: fixed;
   }
 }
-@media (max-width: 1499px) {
+@media (max-width: 991px) {
+    .information-border-sm-a {
+      background: $redbg;
+      background: $redgradient;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      border-top: 2.5px dotted white;
+      border-bottom: 5px solid white;
+    }
+    .information-border-sm-b {
+      background: $redbg;
+      background: $redgradient;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      border-top: 2.5px solid white;
+      border-bottom: 5px dotted white;
+    }
 }
 
 
@@ -93,6 +115,9 @@ div {
 
 p {
   font-size: $paragraphsize;
+}
+.center {
+  text-align: center;
 }
 .or {
   @extend %center;
@@ -111,14 +136,21 @@ p {
   margin: $marginvert $marginhor;
   border: 5px solid white;
   border-radius: 50px;
+  background-image: url("img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .information-box {
   padding: $paddingvert $paddinghor;
 }
-
 #austin {
   border: 5px solid white;
   border-radius: 100px;
+}
+#austinis, p.edu {
+  font-size: $paragraphsize;
+  line-height: 3;
 }
 #bhs {
   border: 5px solid white;
