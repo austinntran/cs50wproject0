@@ -55,42 +55,58 @@ div a {
     background-repeat: no-repeat;
     background-attachment: fixed; }
 
-  .information-borderb {
+  .information-borderc {
     border-right: 5px dotted white;
-    border-top: 5px dotted white;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 43px;
     border-bottom-left-radius: 43px;
     background: #e49e07;
     background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
     background-repeat: no-repeat;
     background-attachment: fixed; }
 
-  .information-bar {
-    background-image: url("img/bg.jpg"); } }
+  .information-bar-bg1 {
+    background-image: url("img/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 @media (max-width: 991px) {
   .information-border-sm-a {
     background: #e49e07;
     background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    border-top: 2.5px dotted white;
-    border-bottom: 5px solid white; }
+    border-top: 5px dotted white;
+    border-bottom: 2.5px solid white; }
 
-  .information-border-sm-b {
+  .information-border-sm-c {
     background: #e49e07;
     background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    border-top: 2.5px solid white;
-    border-bottom: 5px dotted white; }
+    border-bottom: 5px dotted white;
+    border-top-right-radius: 43px;
+    border-top-left-radius: 43px; }
 
-  .information-bar {
+  .information-bar-bg1 {
     background-color: purple; } }
+.information-bar-bg3 {
+  background-image: url("img/edu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.information-bar-bg2 {
+  background-image: url("img/bg3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 #about::before {
   content: "Who is Austin Tran?"; }
 
 p {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 2; }
 
 .center {
   text-align: center; }
@@ -109,10 +125,7 @@ p {
 .information-bar {
   margin: 70px 10%;
   border: 5px solid white;
-  border-radius: 50px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  border-radius: 50px; }
 
 .information-box {
   padding: 20px 5%; }
@@ -121,11 +134,13 @@ p {
   border: 5px solid white;
   border-radius: 100px; }
 
-#austinis, p.edu {
+#austinis {
   font-size: 16px;
-  line-height: 3; }
+  line-height: 2; }
+  #austinis li {
+    line-height: 3; }
 
-#bhs {
-  border: 5px solid white; }
+#bhs, #codeimg, #austin {
+  border: 5px solid lightgray; }
 
 /*# sourceMappingURL=styles.css.map */
