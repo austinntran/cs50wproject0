@@ -63,7 +63,10 @@ div a {
     background: #e49e07;
     background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
     background-repeat: no-repeat;
-    background-attachment: fixed; } }
+    background-attachment: fixed; }
+
+  .information-bar {
+    background-image: url("img/bg.jpg"); } }
 @media (max-width: 991px) {
   .information-border-sm-a {
     background: #e49e07;
@@ -79,7 +82,10 @@ div a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     border-top: 2.5px solid white;
-    border-bottom: 5px dotted white; } }
+    border-bottom: 5px dotted white; }
+
+  .information-bar {
+    background-color: purple; } }
 #about::before {
   content: "Who is Austin Tran?"; }
 
@@ -104,7 +110,6 @@ p {
   margin: 70px 10%;
   border: 5px solid white;
   border-radius: 50px;
-  background-image: url("img/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }

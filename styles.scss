@@ -88,6 +88,9 @@ div {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  .information-bar {
+    background-image: url("img/bg.jpg");
+  }
 }
 @media (max-width: 991px) {
     .information-border-sm-a {
@@ -105,6 +108,9 @@ div {
       background-attachment: fixed;
       border-top: 2.5px solid white;
       border-bottom: 5px dotted white;
+    }
+    .information-bar {
+      background-color: purple;
     }
 }
 
@@ -136,7 +142,6 @@ p {
   margin: $marginvert $marginhor;
   border: 5px solid white;
   border-radius: 50px;
-  background-image: url("img/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
