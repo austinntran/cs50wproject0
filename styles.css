@@ -67,7 +67,10 @@ div a {
     background-image: url("img/bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-size: cover; }
+
+  .table td {
+    padding: 20px; } }
 @media (max-width: 991px) {
   .information-border-sm-a, .information-border-sm-c {
     background: #fdff00;
@@ -87,7 +90,10 @@ div a {
     border-top-left-radius: 43px; }
 
   .information-bar-bg1 {
-    background-color: purple; } }
+    background-color: purple; }
+
+  .table td {
+    padding: 32px; } }
 .information-bar-bg2 {
   background-image: url("img/bg2.jpg");
   background-position: center;
@@ -206,5 +212,9 @@ td + td {
 td + td + td {
   background: #d0f56d;
   background: linear-gradient(270deg, #d0f56d 0%, #f6d600 100%); }
+
+.col-centered {
+  float: none;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */

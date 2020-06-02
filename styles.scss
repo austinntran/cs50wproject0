@@ -96,6 +96,10 @@ div {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .table td {
+    padding: 20px;
+  }
 }
 @media (max-width: 991px) {
     %gradientbox2 {
@@ -119,6 +123,9 @@ div {
     }
     .information-bar-bg1 {
       background-color: purple;
+    }
+    .table td {
+      padding: 32px;
     }
 }
 
@@ -252,4 +259,8 @@ td + td {
 td + td + td {
   background: rgb(208,245,109);
   background: linear-gradient(270deg, rgba(208,245,109,1) 0%, rgba(246,214,0,1) 100%);
+}
+.col-centered{
+float: none;
+margin: 0 auto;
 }
