@@ -1,35 +1,141 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Links</title>
+        <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <ul class="navbar navbar-expand-lg  navbar-dark bg-dark">
-          <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" id="top">
             <a class="navbar-brand" href="index.html">Austin Tran</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="page2.html">About Me</a>
+                  <a class="nav-link" href="about.html">About Me</a>
                 </li>
                 <li>
-                  <a class="nav-link active" href="page3.html">My Links</a>
+                  <a class="nav-link active" href="cyber.html">Cybersecurity Competitions</a>
                 </li>
                 <li>
-                  <a class="nav-link" href="page4.html">Interests and Hobbies</a>
+                  <a class="nav-link" href="links.html">My Links</a>
                 </li>
               </ul>
             </div>
+        </nav>
+        <div class="container-fluid">
+          <div class="col-lg-12" id="heading">
+            <h1 id="cyber" class="center"></h1>
           </div>
-        </ul>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 center cyberintro information-box">
+              <p>Austin, in addition to being a computer science student, participates in many Cybersecurity contests</p>
+              <p>He is the leader of the <a href="https://ctftime.org/team/114649" style="color: magenta;">Cybervlads</a> CTF team and the Cybervlads Cyber Patriot team
+            </div>
+            <div class="col-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+              <table class="table">
+                <caption>Table of All Cyber Security Events Austin has Competed in</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Hack-A-Sat Qualifiers</td>
+                    <td>May 2020</td>
+                    <td>Jeopardy-Style CTF</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>SharkyCTF</td>
+                    <td>May 2020</td>
+                    <td>Jeopardy-Style CTF</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Tiger King CTF</td>
+                    <td>May 2020</td>
+                    <td>Jeopardy-Style CTF</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Covid-19 CTF</td>
+                    <td>May 2020</td>
+                    <td>Jeopardy-Style CTF</td>
+                  </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Cyber Quests: Spring 2020</td>
+                      <td>May 2020</td>
+                      <td>Web Application Security Quiz</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Houseplant CTF 2020</td>
+                      <td>April 2020</td>
+                      <td>Jeopardy-Style CTF</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>UMDCTF 2020</td>
+                      <td>April 2020</td>
+                      <td>Jeopardy-Style CTF</td>
+                    </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>Dawg CTF</td>
+                        <td>April 2020</td>
+                        <td>Jeopardy-Style CTF</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>AUCTF 2020</td>
+                        <td>April 2020</td>
+                        <td>Jeopardy-Style CTF</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>X-MAS GTF 2020</td>
+                        <td>March 2020</td>
+                        <td>Jeopardy-Style CTF</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11</th>
+                        <td>RUSecure CTF Qualifying Round 2020</td>
+                        <td>February 2020</td>
+                        <td>Jeopardy-Style CTF</td>
+                      </tr>
+                        <tr>
+                          <th scope="row">12</th>
+                          <td>Cyber Patriot</td>
+                          <td>September 2019</td>
+                          <td>OS Hardening and Cisco Challenge</td>
+                        </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </div>
     </body>
 </html>

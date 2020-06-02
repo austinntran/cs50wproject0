@@ -7,6 +7,13 @@ $margintop: 70px;
 $redbg: rgb(253,255,0);
 $border: 5px dotted #1d965e;
 $redgradient: linear-gradient(0deg, rgba(253,255,0,.8) 0%, rgba(228,158,7,1) 100%);
+
+%gradientboxoutside {
+  background: $redbg;
+  background: $redgradient;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 %center {
   text-align: center;
 }
@@ -40,14 +47,11 @@ h2 {
 }
 div {
   .box {
+    @extend %gradientboxoutside;
     margin: $marginvert $marginhor;
     padding: $paddingvert $paddinghor;
     border: 5px dotted white;
     border-radius: 15px 50px 30px;
-    background: $redbg;
-    background: $redgradient;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100%;
     dt {
       font-size: 20px;
@@ -87,7 +91,7 @@ div {
     border-bottom-left-radius: 43px;
   }
   .information-bar-bg1 {
-    background-image: url("img/bg2.jpg");
+    background-image: url("img/bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,14 +123,13 @@ div {
 }
 
 
-
-.information-bar-bg3 {
-  background-image: url("img/edu.jpg");
+.information-bar-bg2 {
+  background-image: url("img/bg2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.information-bar-bg2 {
+.information-bar-bg3 {
   background-image: url("img/bg3.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -141,6 +144,9 @@ div {
 }
 #about::before {
   content: "Who is Austin Tran?";
+}
+#cyber::before {
+  content: "Cybersecurity Competitions";
 }
 
 p {
@@ -183,4 +189,49 @@ p {
 }
 #codeimg, #austin {
   border: 5px solid lightgray;
+}
+#totop {
+  background-color: #1d965e;
+  padding: $paddingvert $paddinghor;
+  margin: $marginvert $marginhor;
+  border: 5px solid lightgray;
+  border-radius: 200px;
+}
+.cyberintro {
+  background-image: url("img/cyberpurple.jpg");
+  margin-top: $marginvert;
+  margin-bottom: $marginvert;
+  border: 5px solid white;
+  border-radius: 50px;
+}
+caption {
+  color: pink;
+}
+thead {
+  background: url("img/cyberlime.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+th[scope="col"] {
+  @extend %center;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 0px 0px 10px black;
+}
+th[scope="row"] {
+  background: #d0f56d;
+  @extend %center;
+}
+th + td {
+  background: rgb(208,245,109);
+  background: linear-gradient(90deg, rgba(208,245,109,1) 0%, rgba(246,214,0,1) 100%);
+}
+td + td {
+  background: #f6d600;
+  @extend %center;
+}
+td + td + td {
+  background: rgb(208,245,109);
+  background: linear-gradient(270deg, rgba(208,245,109,1) 0%, rgba(246,214,0,1) 100%);
 }
