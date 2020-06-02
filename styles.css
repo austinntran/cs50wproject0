@@ -28,8 +28,8 @@ div .box {
   padding: 20px 5%;
   border: 5px dotted white;
   border-radius: 15px 50px 30px;
-  background: #e49e07;
-  background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
+  background: #fdff00;
+  background: linear-gradient(0deg, rgba(253, 255, 0, 0.8) 0%, #e49e07 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%; }
@@ -45,24 +45,21 @@ div a {
   #home::before {
     content: "Welcome to Austin Tran's Project 0!"; } }
 @media (min-width: 992px) {
-  .information-bordera {
-    border-left: 5px dotted white;
-    border-bottom: 5px dotted white;
-    border-top-right-radius: 43px;
-    border-bottom-left-radius: 50px;
-    background: #e49e07;
-    background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
+  .information-bordera, .information-borderc {
+    background: #fdff00;
+    background: linear-gradient(0deg, rgba(253, 255, 0, 0.8) 0%, #e49e07 100%);
     background-repeat: no-repeat;
     background-attachment: fixed; }
 
+  .information-bordera {
+    border-left: 5px dotted #1d965e;
+    border-top-right-radius: 43px;
+    border-bottom-right-radius: 43px; }
+
   .information-borderc {
-    border-right: 5px dotted white;
+    border-right: 5px dotted #1d965e;
     border-top-left-radius: 43px;
-    border-bottom-left-radius: 43px;
-    background: #e49e07;
-    background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed; }
+    border-bottom-left-radius: 43px; }
 
   .information-bar-bg1 {
     background-image: url("img/bg2.jpg");
@@ -70,20 +67,20 @@ div a {
     background-repeat: no-repeat;
     background-size: cover; } }
 @media (max-width: 991px) {
-  .information-border-sm-a {
-    background: #e49e07;
-    background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
+  .information-border-sm-a, .information-border-sm-c {
+    background: #fdff00;
+    background: linear-gradient(0deg, rgba(253, 255, 0, 0.8) 0%, #e49e07 100%);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-top: 5px dotted white;
-    border-bottom: 2.5px solid white; }
+    background-attachment: fixed; }
+
+  .information-border-sm-a {
+    border-top: 5px dotted #1d965e;
+    border-bottom: 2.5px solid white;
+    border-bottom-right-radius: 43px;
+    border-bottom-left-radius: 43px; }
 
   .information-border-sm-c {
-    background: #e49e07;
-    background: linear-gradient(0deg, #e49e07 0%, #ffe200 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-bottom: 5px dotted white;
+    border-bottom: 5px dotted #1d965e;
     border-top-right-radius: 43px;
     border-top-left-radius: 43px; }
 
@@ -97,6 +94,12 @@ div a {
 
 .information-bar-bg2 {
   background-image: url("img/bg3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.information-bar-bg4 {
+  background-image: url("img/bg4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -131,7 +134,6 @@ p {
   padding: 20px 5%; }
 
 #austin {
-  border: 5px solid white;
   border-radius: 100px; }
 
 #austinis {
@@ -140,7 +142,7 @@ p {
   #austinis li {
     line-height: 3; }
 
-#bhs, #codeimg, #austin {
+#codeimg, #austin {
   border: 5px solid lightgray; }
 
 /*# sourceMappingURL=styles.css.map */
