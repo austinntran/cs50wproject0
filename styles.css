@@ -4,7 +4,7 @@ div .box {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-.or, th[scope="col"], th[scope="row"], td + td {
+.or, th, td + td {
   text-align: center; }
 
 #heading {
@@ -163,6 +163,21 @@ p {
   margin-bottom: 70px;
   border: 5px solid white;
   border-radius: 50px; }
+
+.table thead tr:first-of-type th {
+  border-top: none; }
+
+th:first-of-type.borderme {
+  border-top-left-radius: 100px; }
+
+th:last-of-type.borderme {
+  border-top-right-radius: 100px; }
+
+tr:last-of-type th:first-of-type.borderme2 {
+  border-bottom-left-radius: 100px; }
+
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 100px; }
 
 caption {
   color: pink; }
