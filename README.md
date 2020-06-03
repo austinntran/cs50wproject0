@@ -13,3 +13,7 @@ index.html:
   contains home/landing page for the project and introduces the project once more
 about.html:
   contains "About Me" page which contains information with lists and images
+cyber.html:
+  contains "Cybersecurity Competitions" page which contains a styled table with my Cybersecurity Competitions
+links.html:
+  contains "My Links" page with buttons that link externally to my social media and other online profiles
