@@ -4,7 +4,7 @@ Web Programming with Python and JavaScript
 
 I completed the project by creating a website about me including topics like education and hobbies.
 
-#What's in Each File
+# What's in Each File
 
 img:
   contains images and background used in the webpages
@@ -17,7 +17,7 @@ index.html:
 
 about.html:
   contains "About Me" page which contains information with lists and images
-  
+
 cyber.html:
   contains "Cybersecurity Competitions" page which contains a styled table with my Cybersecurity   Competitions
 
