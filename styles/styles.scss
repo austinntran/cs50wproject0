@@ -46,16 +46,24 @@ h2 {
   margin-bottom: 50px;
 }
 div {
-  .box {
+  %box {
     @extend %gradientboxoutside;
     margin: $marginvert $marginhor;
-    padding: $paddingvert $paddinghor;
     border: 5px dotted white;
     border-radius: 15px 50px 30px;
-    height: 100%;
     dt {
       font-size: 20px;
     }
+  }
+  .box {
+    @extend %box;
+    height: 100%;
+    padding: $paddingvert $paddinghor;
+  }
+  .box2 {
+    @extend %box;
+    height: auto;
+    padding: 30px $paddinghor;
   }
   a {
     color: white;
@@ -91,7 +99,7 @@ div {
     border-bottom-left-radius: 43px;
   }
   .information-bar-bg1 {
-    background-image: url("img/bg1.jpg");
+    background-image: url("../img/bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,7 +136,7 @@ div {
       background-color: purple;
     }
     .table td {
-      padding: 10% 0px;
+      padding: 10% 2%;
     }
     .col-centered {
       max-width: 90%;
@@ -137,20 +145,20 @@ div {
 
 
 .information-bar-bg2 {
-  background-image: url("img/bg2.jpg");
+  background-image: url("../img/bg2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .information-bar-bg3 {
-  background-image: url("img/bg3.jpg");
+  background-image: url("../img/bg3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .information-bar-bg4 {
-  background-image: url("img/bg4.jpg");
+  background-image: url("../img/bg4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -161,6 +169,13 @@ div {
 #cyber::before {
   content: "Cybersecurity Competitions";
 }
+
+#link::before {
+  content: "My Links";
+}
+
+
+
 
 p {
   font-size: $paragraphsize;
@@ -211,7 +226,7 @@ p {
   border-radius: 200px;
 }
 .cyberintro {
-  background-image: url("img/cyberpurple.jpg");
+  background-image: url("../img/cyberpurple.jpg");
   margin-top: $marginvert;
   margin-bottom: $marginvert;
   border: 5px solid white;
@@ -237,7 +252,7 @@ caption {
   color: pink;
 }
 thead {
-  background: url("img/cyberlime.jpg");
+  background: url("../img/cyberlime.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -269,4 +284,36 @@ td + td + td {
 .col-centered{
   float: none;
   margin: 0 auto;
+}
+.social-icon {
+  .fa {
+    padding: 20px;
+    font-size: 75px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+    border-radius: 50%;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-github {
+    background: #000000;
+    color: white;
+  }
 }

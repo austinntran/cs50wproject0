@@ -1,4 +1,4 @@
-div .box {
+div .box, div .box2 {
   background: #fdff00;
   background: linear-gradient(0deg, rgba(253, 255, 0, 0.8) 0%, #e49e07 100%);
   background-repeat: no-repeat;
@@ -29,14 +29,18 @@ h1, h2 {
 h2 {
   margin-bottom: 50px; }
 
-div .box {
+div .box, div .box2 {
   margin: 70px 10%;
-  padding: 20px 5%;
   border: 5px dotted white;
-  border-radius: 15px 50px 30px;
-  height: 100%; }
-  div .box dt {
+  border-radius: 15px 50px 30px; }
+  div .box dt, div .box2 dt {
     font-size: 20px; }
+div .box {
+  height: 100%;
+  padding: 20px 5%; }
+div .box2 {
+  height: auto;
+  padding: 30px 5%; }
 div a {
   color: white; }
 
@@ -64,7 +68,7 @@ div a {
     border-bottom-left-radius: 43px; }
 
   .information-bar-bg1 {
-    background-image: url("img/bg1.jpg");
+    background-image: url("../img/bg1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -97,24 +101,24 @@ div a {
     background-color: purple; }
 
   .table td {
-    padding: 10% 0px; }
+    padding: 10% 2%; }
 
   .col-centered {
     max-width: 90%; } }
 .information-bar-bg2 {
-  background-image: url("img/bg2.jpg");
+  background-image: url("../img/bg2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .information-bar-bg3 {
-  background-image: url("img/bg3.jpg");
+  background-image: url("../img/bg3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .information-bar-bg4 {
-  background-image: url("img/bg4.jpg");
+  background-image: url("../img/bg4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -124,6 +128,9 @@ div a {
 
 #cyber::before {
   content: "Cybersecurity Competitions"; }
+
+#link::before {
+  content: "My Links"; }
 
 p {
   font-size: 16px;
@@ -171,7 +178,7 @@ p {
   border-radius: 200px; }
 
 .cyberintro {
-  background-image: url("img/cyberpurple.jpg");
+  background-image: url("../img/cyberpurple.jpg");
   margin-top: 70px;
   margin-bottom: 70px;
   border: 5px solid white;
@@ -196,7 +203,7 @@ caption {
   color: pink; }
 
 thead {
-  background: url("img/cyberlime.jpg");
+  background: url("../img/cyberlime.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -223,5 +230,29 @@ td + td + td {
 .col-centered {
   float: none;
   margin: 0 auto; }
+
+.social-icon .fa {
+  padding: 20px;
+  font-size: 75px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%; }
+.social-icon .fa-youtube {
+  background: #bb0000;
+  color: white; }
+.social-icon .fa-twitter {
+  background: #55ACEE;
+  color: white; }
+.social-icon .fa-linkedin {
+  background: #007bb5;
+  color: white; }
+.social-icon .fa-instagram {
+  background: #125688;
+  color: white; }
+.social-icon .fa-github {
+  background: #000000;
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */
