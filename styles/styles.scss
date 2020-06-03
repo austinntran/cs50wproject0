@@ -222,8 +222,9 @@ p {
   background-color: #1d965e;
   padding: $paddingvert $paddinghor;
   margin: $marginvert $marginhor;
-  border: 5px solid lightgray;
+  border: 5px solid white;
   border-radius: 200px;
+  color: white;
 }
 .cyberintro {
   background-image: url("../img/cyberpurple.jpg");
