@@ -78,7 +78,10 @@ div a {
     max-width: 75%; }
 
   .col-centered {
-    max-width: 75%; } }
+    max-width: 75%; }
+
+  .fa {
+    width: 250px; } }
 @media (max-width: 991px) {
   .information-border-sm-a, .information-border-sm-c {
     background: #fdff00;
@@ -104,7 +107,10 @@ div a {
     padding: 10% 2%; }
 
   .col-centered {
-    max-width: 90%; } }
+    max-width: 90%; }
+
+  .fa {
+    width: auto; } }
 .information-bar-bg2 {
   background-image: url("../img/bg2.jpg");
   background-position: center;
@@ -235,7 +241,6 @@ td + td + td {
 .social-icon .fa {
   padding: 20px;
   font-size: 75px;
-  width: 250px;
   text-align: center;
   text-decoration: none;
   margin: 5px 10px;
