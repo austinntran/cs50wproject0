@@ -96,9 +96,12 @@ div {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .table td {
     padding: 20px;
+    max-width: 75%
+  }
+  .col-centered {
+    max-width: 75%;
   }
 }
 @media (max-width: 991px) {
@@ -125,7 +128,10 @@ div {
       background-color: purple;
     }
     .table td {
-      padding: 32px;
+      padding: 10% 0px;
+    }
+    .col-centered {
+      max-width: 90%;
     }
 }
 
@@ -261,6 +267,6 @@ td + td + td {
   background: linear-gradient(270deg, rgba(208,245,109,1) 0%, rgba(246,214,0,1) 100%);
 }
 .col-centered{
-float: none;
-margin: 0 auto;
+  float: none;
+  margin: 0 auto;
 }
